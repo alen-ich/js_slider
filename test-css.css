@@ -75,10 +75,10 @@ body * {
     width: 679px;
 }
 
-.projects-link:hover, .projects-link.active {
+.projects-link:hover {
     color: #E3B873;
     text-decoration: underline;
-
+    transition: .4s;
 }
 
 .wrapper {

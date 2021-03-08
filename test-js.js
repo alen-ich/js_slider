@@ -1,16 +1,16 @@
 let images = [{
-    url: "../img-1.png",
+    url: "./images/img-1.png",
     city: "Rostov-on-Don <br> LCD admiral",
     area: "81 m<sup>2</sup>",
     time: "3.5 months",
     cost: "Upon request"
     }, {
-    url: "../img-2.png",
+    url: "./images/img-2.png",
     city: "Sochi <br> Thievs",
     area: "105 m<sup>2</sup>",
     time: "4 months"
     }, {
-    url: "../img-3.png",
+    url: "./images/img-3.png",
     city: "Rostov-on-Don <br> LCD admiral",
     area: "93 m<sup>2</sup>",
     time: "3 months"
@@ -38,10 +38,8 @@ function initSlider(options) {
   initArrows();
   initTitles();
   initDots();
+  initLinks();
 
-  if (options.links) {
-    initLinks();
-  }
   
   
   function initImages() {
@@ -62,6 +60,22 @@ function initSlider(options) {
           nextNumber = curNumber === images.length - 1? 0 : curNumber + 1;
         }
         moveSlider(nextNumber);
+      });
+    });
+  }
+
+  function initLinks() {
+    sliderLinks.querySelectorAll(".projects-link").forEach(link => {
+      link.addEventListener("click", function() {
+          if(link.innerHTML == "Rostov-on-Don, Admiral") {
+            moveSlider(0);
+          } 
+          if(link.innerHTML == "Sochi, Thieves") {
+            moveSlider(1);
+          } 
+          if(link.innerHTML == "Rostov-on-Don, Patriotic") {
+            moveSlider(2);
+          };
       });
     });
   }
@@ -87,7 +101,6 @@ function initSlider(options) {
       sliderDots.querySelector(".n" + num).classList.add("active");
     }
     if (options.titles) changeTitle(num);
-
   }
   
    function initTitles() {
