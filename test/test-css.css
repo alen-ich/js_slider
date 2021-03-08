@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1256px;
+    margin: 0 auto;
+}
+
+.title {
+    font-family: 'Yeseva One', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.txt {
+    font-style: normal;
+    font-weight: normal;
+    color: #FFFFFF;
+}
+
+.slider {
+    background-color: #131313;
+}
+
+.projects-container {
+    padding-top: 107px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 415px;
+}
+
+.projects-list{
+    padding: 0;
+    margin-left: 580px;
+    margin-bottom: 45px;
+    margin-top: 0;
+}
+
+.projects-link {
+    font-family: 'Yeseva One', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.projects-img {
+    width: 679px;
+}
+
+.projects-link:hover, .projects-link.active {
+    color: #E3B873;
+    text-decoration: underline;
+
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.projects-desc {
+    margin-right: 50px;
+}
+
+.projects-txt {
+    max-width: 450px;
+    margin-bottom: 32px;
+}
+
+.info-title {
+    font-size: 18px;
+    line-height: 15px;
+    letter-spacing: normal;
+}
+
+.info-piece {
+    width: 200px;
+    height: 25%; 
+    margin-right: 50px;
+    margin-bottom: 34px;
+}
+.info-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+  .slider-images {
+    position: relative;
+    width: 679px;
+  }
+  
+  
+  .slider-images .image {
+    position: absolute;
+    left: -190px;
+    top: 0;
+    opacity: 0;
+    transition: opacity 800ms ease;
+  }
+  
+  .slider-images .image.active {
+    opacity: 1;
+  }
+  
+  .slider-dots {
+    display: flex;
+  }
+
+  .slider-nav {
+      display: flex;
+      align-items: center;
+      margin-top: 50px;
+  }
+
+  .slider-arrow {
+      background-color: #131313;
+      border: none;
+      cursor: pointer;
+      outline: none;
+  }
+
+  
+  .slider-dots-item {
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background 0.4s ease;
+  }
+  
+  .slider-dots-item:hover, .slider-dots-item.active {
+    background: #FFFFFF;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
