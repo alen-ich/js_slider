@@ -53,14 +53,16 @@ body * {
     padding-bottom: 415px;
 }
 
-.projects-list{
+.slider-links {
     padding: 0;
     margin-left: 580px;
-    margin-bottom: 45px;
+    margin-bottom: 30px;
     margin-top: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
-.projects-link {
+.slider-links-item {
     font-family: 'Yeseva One', cursive;
     font-style: normal;
     font-weight: normal;
@@ -69,6 +71,13 @@ body * {
     color: rgba(255, 255, 255, 0.3);
     text-decoration: none;
     text-transform: uppercase;
+    cursor: pointer;
+}
+
+.slider-links-item.active, .slider-links-item:hover {
+    color: #E3B873;
+    text-decoration: underline;
+    transition: .3s;
 }
 
 .projects-img {
