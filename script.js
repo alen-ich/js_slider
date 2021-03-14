@@ -1,18 +1,18 @@
 let images = [{
     url: "./images/img-1.png",
-    city: "Rostov-on-Don <br> LCD admiral",
+    city: "Rostov-on-Don, LCD admiral",
     area: "81 m<sup>2</sup>",
     time: "3.5 months",
     cost: "Upon request"
     }, {
     url: "./images/img-2.png",
-    city: "Sochi <br> Thievs",
+    city: "Sochi, Thievs",
     area: "105 m<sup>2</sup>",
     time: "4 months",
     cost: "Upon request"
     }, {
     url: "./images/img-3.png",
-    city: "Rostov-on-Don <br> Patriotic",
+    city: "Rostov-on-Don, Patriotic",
     area: "93 m<sup>2</sup>",
     time: "3 months",
     cost: "Upon request"
